@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
+@import "../partials/secprincipal";
+@import "../partials/contacto";
+@import "../partials/trabajos";
+@import "../partials/conocimientos";
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+}
+.titulo { 
+    color:#fff;
+}
+@mixin encabezado {
+    text-align: center;
+    margin-top: 35px;
+    font-family: sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+   
+}
+html{
+    scroll-behavior:smooth;
+}
+body {
+    font-family: 'Spline Sans', sans-serif;
+    background-color: #451B60;
+    color: rgb(226, 184, 253) ;
+   
+}
+nav{
+    background-color: rgb(17, 1, 20);
+}
+.colorCollapse{
+    background-color: rgb(17, 1, 20);
+}
+
+    /* Pagina Principal-fin */
+
+ 
+/* Seccion Sobremi-Inicio */
+.sobremi__encabezado{
+    @include encabezado();
+}
+.contenedor__img  { 
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor__sobremi{
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 800px;
+}
+.sobremi__img{
+    width:450px ;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+#seccionSobremi h3{
+    display: inline;
+}
+
+
+
+ footer{
+    height: 7em;
+    background-color: rgb(17, 1, 20);
+    margin-top:  5em;
+    background-image: linear-gradient(rgb(35, 1, 43), rgb(0, 0, 0) );
+  }

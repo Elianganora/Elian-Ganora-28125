@@ -1,0 +1,282 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap");
+.bgcolor {
+  background-color: #26023D;
+  color: #e2b8fd;
+}
+
+.centrar {
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor__caja--tamaño {
+  width: 500px;
+}
+
+.contenedor__texto {
+  text-align: center;
+  margin-top: 35px;
+  font-family: sans-serif;
+}
+
+/* Contacto-inicio */
+.contacto__form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 5%;
+  border-radius: 7px;
+  font-family: 'Spline Sans', sans-serif;
+}
+
+.contacto__titulo {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+textarea {
+  min-height: 200px;
+  min-width: 100px;
+  max-width: 100%;
+}
+
+#boton {
+  background: #7d2f8f;
+  color: white;
+  padding: 20px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#boton:hover {
+  cursor: pointer;
+  background-color: #42114d;
+}
+
+footer {
+  height: 7em;
+  background-color: #110114;
+  margin-top: 5em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#23012b), to(black));
+  background-image: linear-gradient(#23012b, black);
+}
+
+/* contacto-Fin */
+/* Seccion Trabajos-Inicio */
+.trabajos__encabezado {
+  font-family: sans-serif;
+  margin-top: 100px;
+}
+
+.trabajos__parrafo {
+  text-align: center;
+}
+
+#seccionTrabajos h2 {
+  text-align: center;
+}
+
+.trabajos__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  -ms-grid-rows: 450px 450px;
+      grid-template-rows: 450px 450px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.trabajos__img {
+  height: 450px;
+  width: 320px;
+  border: solid 2px white;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.trabajos__img:hover {
+  height: 500px;
+  width: 380px;
+}
+
+.carrusel {
+  margin-bottom: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tamaño img {
+  margin-top: 10%;
+  width: 750px;
+  height: 6%;
+}
+
+#seccionTrabajos p {
+  font-size: 20px;
+}
+
+/* Seccion conocimientos-Inicio */
+p {
+  color: #fff;
+}
+
+.conocimientos__parrafo {
+  margin-left: 30px;
+}
+
+.carrusel {
+  margin-left: 60%;
+}
+
+.tamaño img {
+  width: 550px;
+  height: 30%;
+}
+
+#seccionConocimientos h2 {
+  text-align: center;
+  margin-top: 35px;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 35px;
+  font-family: sans-serif;
+}
+
+footer {
+  height: 7em;
+  background-color: #110114;
+  margin-top: 5em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#23012b), to(black));
+  background-image: linear-gradient(#23012b, black);
+}
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+}
+
+.titulo {
+  color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Spline Sans', sans-serif;
+  background-color: #451B60;
+  color: #e2b8fd;
+}
+
+nav {
+  background-color: #110114;
+}
+
+.colorCollapse {
+  background-color: #110114;
+}
+
+/* Pagina Principal-fin */
+/* Seccion Sobremi-Inicio */
+.sobremi__encabezado {
+  text-align: center;
+  margin-top: 35px;
+  font-family: sans-serif;
+}
+
+.contenedor__img {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor__sobremi {
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 800px;
+}
+
+.sobremi__img {
+  width: 450px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+#seccionSobremi h3 {
+  display: inline;
+}
+
+footer {
+  height: 7em;
+  background-color: #110114;
+  margin-top: 5em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#23012b), to(black));
+  background-image: linear-gradient(#23012b, black);
+}
+/*# sourceMappingURL=estilos.css.map */

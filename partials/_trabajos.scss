@@ -1,0 +1,47 @@
+
+/* Seccion Trabajos-Inicio */
+
+.trabajos__encabezado {
+    font-family:sans-serif ;
+    margin-top: 100px;
+} 
+.trabajos__parrafo {
+    text-align: center;
+}
+#seccionTrabajos h2 {
+ 
+    text-align: center;
+}
+.trabajos__grid {
+     display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 450px 450px;
+    justify-content: center;
+    justify-items: center;
+}
+.trabajos__img {
+    height: 450px;
+    width: 320px;
+    border: solid 2px white;
+    transition: all 2s; 
+}
+.trabajos__img:hover{
+height: 500px;
+width: 380px;
+}
+.carrusel{
+    margin-bottom: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.tamaño img{
+    margin-top: 10%;
+    width: 750px;
+    height: 6%;
+}
+#seccionTrabajos p {
+    font-size: 20px;
+} 
+

@@ -1,0 +1,22 @@
+@mixin encabezado {
+    text-align: center;
+    margin-top: 35px;
+    font-family: sans-serif;
+}
+
+.bgcolor{
+    background-color: #26023D;
+    color: rgb(226, 184, 253) ;;
+}
+.centrar{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__caja--tamaño{
+    width: 500px;
+}
+.contenedor__texto{
+    @include encabezado();
+}

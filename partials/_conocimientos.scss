@@ -1,0 +1,45 @@
+ /* Seccion conocimientos-Inicio */ 
+ $alto: 600px;
+ $ancho: 650px;
+$color: blanco;
+
+
+
+p{
+    @if $color==blanco{
+        color: #fff;
+    }
+    @else{
+        color: aqua;
+    }
+}
+.conocimientos__parrafo{
+    margin-left: 30px;
+}
+.carrusel{
+    margin-left: 60%;
+}
+.tamaño img{
+    width: 550px;
+    height: 30%;
+
+}
+
+@mixin encabezado {
+    text-align: center;
+    margin-top: 35px;
+    font-family: sans-serif;
+}
+#seccionConocimientos h2{
+   @include encabezado;
+}
+h2{
+    @include encabezado;
+}
+footer{
+    height: 7em;
+    background-color: rgb(17, 1, 20);
+    margin-top:  5em;
+    background-image: linear-gradient(rgb(35, 1, 43), rgb(0, 0, 0) );
+  }
+
