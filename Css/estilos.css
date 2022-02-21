@@ -1,8 +1,36 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap");
+@media screen and (max-width: 576px) {
+  .contenedor__caja2--centrar .contenedor__texto {
+    margin-bottom: 400px;
+  }
+}
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
 .bgcolor {
   background-color: #26023D;
-  color: #e2b8fd;
+  color: white;
+}
+
+#boton--secprincipal {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#inicio {
+  background-image: url(Imagenes/fondo.jpg);
+}
+
+#boton--secprincipal:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+  font-size: 33px;
 }
 
 .centrar {
@@ -20,6 +48,7 @@
 
 .contenedor__caja--tamaño {
   width: 500px;
+  z-index: 99;
 }
 
 .contenedor__texto {
@@ -29,6 +58,24 @@
 }
 
 /* Contacto-inicio */
+@media screen and (max-width: 576px) {
+  .contacto__form {
+    margin-top: 10%;
+  }
+}
+
+body {
+  background-color: #26023D;
+  color: #e2b8fd;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
 .contacto__form {
   width: 450px;
   margin: auto;
@@ -36,9 +83,10 @@
   padding: 10px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 5%;
+  margin-top: 6%;
   border-radius: 7px;
   font-family: 'Spline Sans', sans-serif;
+  z-index: 99;
 }
 
 .contacto__titulo {
@@ -66,7 +114,7 @@ textarea {
 }
 
 #boton {
-  background: #7d2f8f;
+  background-color: #26023D;
   color: white;
   padding: 20px;
   -webkit-transition: all 2s;
@@ -75,7 +123,7 @@ textarea {
 
 #boton:hover {
   cursor: pointer;
-  background-color: #42114d;
+  background-color: #26023D;
 }
 
 footer {
@@ -88,6 +136,37 @@ footer {
 
 /* contacto-Fin */
 /* Seccion Trabajos-Inicio */
+@media only screen and (max-width: 576px) {
+  .trabajos__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .carrusel-tamaño {
+    width: 400px;
+  }
+  .carousel-inner img {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.carrusel-tamaño {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel-inner img {
+  margin-top: 10%;
+  width: 600px;
+  height: 400px;
+}
+
 .trabajos__encabezado {
   font-family: sans-serif;
   margin-top: 100px;
@@ -104,8 +183,8 @@ footer {
 .trabajos__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33% 33% 33%;
-      grid-template-columns: 33% 33% 33%;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 450px 450px;
       grid-template-rows: 450px 450px;
   -webkit-box-pack: center;
@@ -123,27 +202,9 @@ footer {
 }
 
 .trabajos__img:hover {
-  height: 500px;
-  width: 380px;
-}
-
-.carrusel {
-  margin-bottom: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.tamaño img {
-  margin-top: 10%;
-  width: 750px;
-  height: 6%;
+  cursor: pointer;
+  height: 460px;
+  width: 330px;
 }
 
 #seccionTrabajos p {
@@ -159,7 +220,7 @@ p {
   margin-left: 30px;
 }
 
-.carrusel {
+.carrusel-conocimientos {
   margin-left: 60%;
 }
 
@@ -189,8 +250,10 @@ footer {
 }
 
 #particles-js {
-  width: 100%;
   height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
 }
 
 .titulo {
@@ -210,7 +273,6 @@ html {
 
 body {
   font-family: 'Spline Sans', sans-serif;
-  background-color: #451B60;
   color: #e2b8fd;
 }
 
@@ -222,8 +284,41 @@ nav {
   background-color: #110114;
 }
 
+.bgcolor {
+  background-color: #26023D;
+  color: #e2b8fd;
+}
+
+#boton {
+  background-color: #110114;
+  color: #fff;
+  padding: 20px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#boton:hover {
+  cursor: pointer;
+  color: #e2b8fd;
+  background-color: #26023D;
+}
+
 /* Pagina Principal-fin */
 /* Seccion Sobremi-Inicio */
+@media screen and (max-width: 576px) {
+  #seccionSobremi {
+    margin-top: 400px;
+  }
+  .contenedor__sobremi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sobremi__parrafo {
+    width: 450px;
+  }
+}
+
 .sobremi__encabezado {
   text-align: center;
   margin-top: 35px;
@@ -247,7 +342,6 @@ nav {
 }
 
 .contenedor__sobremi {
-  margin-top: 40px;
   margin-left: 30px;
   width: 800px;
 }

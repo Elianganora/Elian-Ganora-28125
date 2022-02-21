@@ -1,47 +1,63 @@
-
 /* Seccion Trabajos-Inicio */
+@media only screen and (max-width: 576px) {
+    .trabajos__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+ 
+    }
+    .carrusel-tamaño{
+        width: 400px;
+    }
+    .carousel-inner img {
+        width: 300px;
+        height: 400px;
+      }
+}
+.carrusel-tamaño{
+    justify-content: center;
+    align-items: center;
 
+}
+.carousel-inner img {
+    margin-top: 10%;
+    width: 600px;
+    height: 400px;
+  }
 .trabajos__encabezado {
-    font-family:sans-serif ;
+    font-family: sans-serif;
     margin-top: 100px;
-} 
+}
+
 .trabajos__parrafo {
     text-align: center;
 }
+
 #seccionTrabajos h2 {
- 
     text-align: center;
 }
+
 .trabajos__grid {
-     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 450px 450px;
     justify-content: center;
     justify-items: center;
 }
+
 .trabajos__img {
     height: 450px;
     width: 320px;
     border: solid 2px white;
-    transition: all 2s; 
+    transition: all 2s;
 }
-.trabajos__img:hover{
-height: 500px;
-width: 380px;
+
+.trabajos__img:hover {
+    cursor: pointer;
+    height: 460px;
+    width: 330px;
 }
-.carrusel{
-    margin-bottom: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-.tamaño img{
-    margin-top: 10%;
-    width: 750px;
-    height: 6%;
-}
+
+
 #seccionTrabajos p {
     font-size: 20px;
-} 
-
+}

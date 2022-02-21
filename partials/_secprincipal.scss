@@ -3,10 +3,34 @@
     margin-top: 35px;
     font-family: sans-serif;
 }
+@media screen and (max-width: 576px) {
+    .contenedor__caja2--centrar  .contenedor__texto {
+            margin-bottom: 400px;
+        }
+        
+    }
+       #particles-js{
 
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: -1;
+    }
 .bgcolor{
     background-color: #26023D;
-    color: rgb(226, 184, 253) ;;
+    color: white;
+
+}
+#boton--secprincipal{
+ 
+    transition: all 2s;
+}
+#inicio{
+    background-image: url(Imagenes/fondo.jpg);
+}
+#boton--secprincipal:hover{
+    cursor:grab ;
+    font-size: 33px;
 }
 .centrar{
     height: 95vh;
@@ -16,6 +40,7 @@
 }
 .contenedor__caja--tamaño{
     width: 500px;
+    z-index: 99;
 }
 .contenedor__texto{
     @include encabezado();

@@ -5,8 +5,10 @@
 @import "../partials/conocimientos";
 
 #particles-js{
-    width: 100%;
     height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
 }
 .titulo { 
     color:#fff;
@@ -29,7 +31,6 @@ html{
 }
 body {
     font-family: 'Spline Sans', sans-serif;
-    background-color: #451B60;
     color: rgb(226, 184, 253) ;
    
 }
@@ -39,11 +40,36 @@ nav{
 .colorCollapse{
     background-color: rgb(17, 1, 20);
 }
-
+.bgcolor{
+    background-color: #26023D;
+    color: rgb(226, 184, 253) ;
+}
+#boton{
+    background-color: rgb(17, 1, 20);
+    color: #fff;
+    padding: 20px;
+    transition: all 2s;
+}
+#boton:hover{
+    cursor: pointer;
+    color: rgb(226, 184, 253) ;
+    background-color: #26023D;
+}
     /* Pagina Principal-fin */
 
  
 /* Seccion Sobremi-Inicio */
+@media screen and (max-width: 576px) {
+    #seccionSobremi {
+            margin-top: 400px;
+        }
+        .contenedor__sobremi{
+           display: flex
+        }
+        .sobremi__parrafo{
+            width: 450px;
+        }
+    }
 .sobremi__encabezado{
     @include encabezado();
 }
@@ -57,7 +83,7 @@ nav{
     justify-content: center;
 }
 .contenedor__sobremi{
-    margin-top: 40px;
+    // margin-top: 40px;
     margin-left: 30px;
     width: 800px;
 }
