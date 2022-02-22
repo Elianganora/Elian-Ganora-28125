@@ -3,26 +3,34 @@
     .trabajos__grid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
- 
+
     }
-    .carrusel-tamaño{
+
+    .carrusel-tamaño {
         width: 400px;
     }
+
     .carousel-inner img {
         width: 300px;
         height: 400px;
-      }
+    }
 }
-.carrusel-tamaño{
+
+.carrusel-tamaño {
     justify-content: center;
     align-items: center;
 
 }
+
 .carousel-inner img {
     margin-top: 10%;
     width: 600px;
     height: 400px;
-  }
+    z-index: 99;
+    border: 2px solid #fff;
+    border-radius: 7px;
+}
+
 .trabajos__encabezado {
     font-family: sans-serif;
     margin-top: 100px;
@@ -48,7 +56,10 @@
     height: 450px;
     width: 320px;
     border: solid 2px white;
+    border-radius: 7px;
     transition: all 2s;
+    position: relative;
+    z-index: 99;
 }
 
 .trabajos__img:hover {

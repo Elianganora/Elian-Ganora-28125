@@ -7,10 +7,7 @@
 }
 
 #particles-js {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: -1;
+  margin-left: 350px;
 }
 
 .bgcolor {
@@ -18,23 +15,36 @@
   color: white;
 }
 
-#boton--secprincipal {
+.logo img {
+  height: 47px;
+  width: 52px;
+}
+
+.logo {
+  font-size: 35px;
   -webkit-transition: all 2s;
   transition: all 2s;
 }
 
-#inicio {
-  background-image: url(Imagenes/fondo.jpg);
+.logo:hover {
+  font-size: 23px;
+}
+
+#boton--secprincipal {
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 #boton--secprincipal:hover {
   cursor: -webkit-grab;
   cursor: grab;
   font-size: 33px;
+  z-index: 99;
+  position: relative;
 }
 
 .centrar {
-  height: 95vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,17 +54,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 99;
+  position: relative;
 }
 
 .contenedor__caja--tamaño {
   width: 500px;
+  opacity: 70%;
   z-index: 99;
 }
 
 .contenedor__texto {
-  text-align: center;
-  margin-top: 35px;
-  font-family: sans-serif;
+  color: #fff;
+  z-index: 99;
+  position: relative;
+  background-color: #26023D;
 }
 
 /* Contacto-inicio */
@@ -64,8 +78,12 @@
   }
 }
 
+.colorCollapse {
+  background-color: #000;
+}
+
 body {
-  background-color: #26023D;
+  background-color: #10011a;
   color: #e2b8fd;
 }
 
@@ -79,11 +97,11 @@ body {
 .contacto__form {
   width: 450px;
   margin: auto;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(34, 3, 54, 0.4);
   padding: 10px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 6%;
+  margin-top: 7%;
   border-radius: 7px;
   font-family: 'Spline Sans', sans-serif;
   z-index: 99;
@@ -97,7 +115,8 @@ body {
   margin-bottom: 20px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
@@ -114,7 +133,7 @@ textarea {
 }
 
 #boton {
-  background-color: #26023D;
+  background-color: #13011f;
   color: white;
   padding: 20px;
   -webkit-transition: all 2s;
@@ -123,7 +142,7 @@ textarea {
 
 #boton:hover {
   cursor: pointer;
-  background-color: #26023D;
+  background-color: #190525;
 }
 
 footer {
@@ -165,6 +184,9 @@ footer {
   margin-top: 10%;
   width: 600px;
   height: 400px;
+  z-index: 99;
+  border: 2px solid #fff;
+  border-radius: 7px;
 }
 
 .trabajos__encabezado {
@@ -197,8 +219,11 @@ footer {
   height: 450px;
   width: 320px;
   border: solid 2px white;
+  border-radius: 7px;
   -webkit-transition: all 2s;
   transition: all 2s;
+  position: relative;
+  z-index: 99;
 }
 
 .trabajos__img:hover {
@@ -221,11 +246,11 @@ p {
 }
 
 .carrusel-conocimientos {
-  margin-left: 60%;
+  margin-left: 50%;
 }
 
 .tamaño img {
-  width: 550px;
+  width: 500px;
   height: 30%;
 }
 
@@ -281,16 +306,16 @@ nav {
 }
 
 .colorCollapse {
-  background-color: #110114;
+  background-color: #000;
 }
 
 .bgcolor {
-  background-color: #26023D;
+  background-color: #10011a;
   color: #e2b8fd;
 }
 
 #boton {
-  background-color: #110114;
+  background-color: #000;
   color: #fff;
   padding: 20px;
   -webkit-transition: all 2s;
@@ -300,7 +325,7 @@ nav {
 #boton:hover {
   cursor: pointer;
   color: #e2b8fd;
-  background-color: #26023D;
+  background-color: #000;
 }
 
 /* Pagina Principal-fin */
@@ -325,6 +350,14 @@ nav {
   font-family: sans-serif;
 }
 
+.sobremi__parrafo {
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: #26023D;
+  z-index: 99;
+}
+
 .contenedor__img {
   float: right;
   display: -webkit-box;
@@ -333,17 +366,17 @@ nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  z-index: 99;
 }
 
 .contenedor__sobremi {
+  margin-top: 40px;
   margin-left: 30px;
   width: 800px;
+  opacity: 70%;
 }
 
 .sobremi__img {
@@ -372,5 +405,7 @@ footer {
   margin-top: 5em;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#23012b), to(black));
   background-image: linear-gradient(#23012b, black);
+  z-index: 99;
+  position: relative;
 }
 /*# sourceMappingURL=estilos.css.map */

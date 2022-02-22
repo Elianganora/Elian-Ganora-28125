@@ -4,107 +4,139 @@
 @import "../partials/trabajos";
 @import "../partials/conocimientos";
 
-#particles-js{
+#particles-js {
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: -1;
 }
-.titulo { 
-    color:#fff;
+
+.titulo {
+    color: #fff;
 }
+
 @mixin encabezado {
     text-align: center;
     margin-top: 35px;
     font-family: sans-serif;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
-   
+
 }
-html{
-    scroll-behavior:smooth;
+
+html {
+    scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Spline Sans', sans-serif;
-    color: rgb(226, 184, 253) ;
-   
+    color: rgb(226, 184, 253);
+
 }
-nav{
+
+nav {
     background-color: rgb(17, 1, 20);
 }
-.colorCollapse{
-    background-color: rgb(17, 1, 20);
+
+.colorCollapse {
+    background-color: #000;
 }
-.bgcolor{
-    background-color: #26023D;
-    color: rgb(226, 184, 253) ;
+
+.bgcolor {
+    background-color: #10011a;
+    color: rgb(226, 184, 253);
 }
-#boton{
-    background-color: rgb(17, 1, 20);
+
+#boton {
+    background-color: #000;
     color: #fff;
     padding: 20px;
     transition: all 2s;
 }
-#boton:hover{
-    cursor: pointer;
-    color: rgb(226, 184, 253) ;
-    background-color: #26023D;
-}
-    /* Pagina Principal-fin */
 
- 
+#boton:hover {
+    cursor: pointer;
+    color: rgb(226, 184, 253);
+    background-color: #000;
+}
+
+/* Pagina Principal-fin */
+
+
 /* Seccion Sobremi-Inicio */
+
+// inicio-medias queries
 @media screen and (max-width: 576px) {
     #seccionSobremi {
-            margin-top: 400px;
-        }
-        .contenedor__sobremi{
-           display: flex
-        }
-        .sobremi__parrafo{
-            width: 450px;
-        }
+        margin-top: 400px;
     }
-.sobremi__encabezado{
+
+    .contenedor__sobremi {
+        display: flex
+    }
+
+    .sobremi__parrafo {
+        width: 450px;
+    }
+}
+
+// fin-medias queries
+.sobremi__encabezado {
     @include encabezado();
 }
-.contenedor__img  { 
+
+.sobremi__parrafo {
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 7px;
+    background-color: #26023D;
+    z-index: 99;
+}
+
+.contenedor__img {
     float: right;
     display: flex;
     flex-wrap: wrap;
-
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+    justify-content: right;
+    z-index: 99;
 }
-.contenedor__sobremi{
-    // margin-top: 40px;
+
+.contenedor__sobremi {
+    margin-top: 40px;
     margin-left: 30px;
     width: 800px;
+    opacity: 70%;
 }
-.sobremi__img{
-    width:450px ;
+
+.sobremi__img {
+    width: 450px;
     height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     border: 1px solid #fff;
+
 }
-#seccionSobremi h3{
+
+#seccionSobremi h3 {
     display: inline;
 }
 
 
 
- footer{
+footer {
     height: 7em;
     background-color: rgb(17, 1, 20);
-    margin-top:  5em;
-    background-image: linear-gradient(rgb(35, 1, 43), rgb(0, 0, 0) );
-  }
+    margin-top: 5em;
+    background-image: linear-gradient(rgb(35, 1, 43), rgb(0, 0, 0));
+    z-index: 99;
+    position: relative;
+}
