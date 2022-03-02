@@ -1,20 +1,4 @@
  /* Seccion conocimientos-Inicio */
- $alto: 600px;
- $ancho: 650px;
- $color: blanco;
-
-
-
- p {
-     @if $color==blanco {
-         color: #fff;
-     }
-
-     @else {
-         color: aqua;
-     }
- }
-
  .conocimientos__parrafo {
      margin-left: 30px;
  }

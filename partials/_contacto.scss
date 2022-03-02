@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
 /* Contacto-inicio */
 @media screen and (max-width: 576px) {
     .contacto__form {
@@ -7,6 +8,7 @@
 
 .colorCollapse {
     background-color: #000;
+    color: #fff;
 }
 
 body {
@@ -24,10 +26,11 @@ body {
 .contacto__form {
     width: 450px;
     margin: auto;
-    background: rgba(34, 3, 54, 0.4);
+    background-color: #26023D;
+    opacity: 70%;
     padding: 10px 20px;
     box-sizing: border-box;
-    margin-top: 7%;
+    margin-top: 11%;
     border-radius: 7px;
     font-family: 'Spline Sans', sans-serif;
     z-index: 99;
@@ -36,7 +39,7 @@ body {
 .contacto__titulo {
     color: white;
     text-align: center;
-    margin: 0;
+    margin: auto;
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -49,6 +52,8 @@ textarea {
     box-sizing: border-box;
     font-size: 17px;
     border: none;
+    z-index: 99;
+    position: relative;
 }
 
 textarea {

@@ -72,16 +72,13 @@ nav {
 
 // inicio-medias queries
 @media screen and (max-width: 576px) {
-    #seccionSobremi {
-        margin-top: 400px;
-    }
 
     .contenedor__sobremi {
         display: flex
     }
 
     .sobremi__parrafo {
-        width: 450px;
+        width: 400px;
     }
 }
 
